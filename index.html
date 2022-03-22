@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Path visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="mySidebar" class="sidebar">
+    <div class="btn-div">
+      <button class="btn2 dfs">DFS</button>
+      <button class="btn2 bfs">BFS</button>
+      <button class="btn2 dijk">Dijkstra Algo</button>
+      <button class="btn2 bidirbfs">Bidirectional BFS</button>
+      <button class="btn2 bidirdij">Bidirectional Dijkstra</button>
+      <button class="btn2 astar">A* (Manhattan Distance)</button>
+      <button class="btn2 bidirastar">Bidirectional A*</button>
+    </div>
+  </div>
+
+  <div id="main">
+    <div class="tools">
+      <div class="inst">
+        <div class="ele">
+          <div class="img1">
+            <img src="./img/start.svg"/>
+          </div>
+          <p>START NODE</p>
+        </div>
+        <div class="ele">
+          <div class="img1">
+            <img src="./img/end.svg"/>
+          </div>
+          <p>END NODE</p>
+        </div>
+        <div class="ele">
+          <div class="wll">
+          </div>
+          <p>WALL</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="vis-btn">
+          <button id="visbtn" class="vis">Visualize</button>
+        </div>
+        <div class="vis-btn">
+          <button class="vis clearb">Clear Grid</button>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+
+    </div>
+  </div>
+  
+
+  <script src="./javascript/node.js"></script>
+  <script src="./javascript/grid.js"></script>
+  <script src="./javascript/dfs.js"></script>
+  <script src="./javascript/main.js"></script>
+  <script src="./javascript/helper.js"></script>
+
+  
+
+</body>
+</html>
