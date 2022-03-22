@@ -163,6 +163,10 @@ let clearGrid = () => {
       {
         nodes[i][j].div.classList.add('end-node')
       }
+      if(nodes[i][j].isWall)
+      {
+        nodes[i][j].isWall = false
+      }
     }
   }
   // nodes[i][j].div.style.backgroundColor = 'white'

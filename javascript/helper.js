@@ -1,33 +1,21 @@
-let algo = ""
-
+let algo = "dfs"
+document.querySelector('#tit').innerText = "DEPTH FIRST SEARCH"
 document.querySelector('.dfs').addEventListener('click', () => {
   algo = "dfs"
+  document.querySelector('#tit').innerText = "DEPTH FIRST SEARCH"
   console.log(algo)
 })
 document.querySelector('.bfs').addEventListener('click', () => {
   algo = "bfs"
+  document.querySelector('#tit').innerText = "BREADTH FIRST SEARCH"
   console.log(algo)
 })
 document.querySelector('.dijk').addEventListener('click', () => {
   algo = "dijk"
+  document.querySelector('#tit').innerText = "DIJKSTRA's ALGORITHM"
   console.log(algo)
 })
-document.querySelector('.bidirbfs').addEventListener('click', () => {
-  algo = "bidirbfs"
-  console.log(algo)
-})
-document.querySelector('.bidirdij').addEventListener('click', () => {
-  algo = "bidirdij"
-  console.log(algo)
-})
-document.querySelector('.astar').addEventListener('click', () => {
-  algo = "astar"
-  console.log(algo)
-})
-document.querySelector('.bidirastar').addEventListener('click', () => {
-  algo = "bidirastar"
-  console.log(algo)
-})  
+ 
 let helper = () => {
   document.querySelector('.clearb').addEventListener('click', clearGrid)
   document.querySelector('#visbtn').addEventListener('click', () => {
@@ -35,8 +23,18 @@ let helper = () => {
     {
       executeDFS()
     }
+    else if(algo == "bfs")
+    {
+      executeBFS()
+    }
+    else if(algo == "dijk")
+    {
+      executeDijkstra()
+    }
+    
   })
 }
+
 
 
 
